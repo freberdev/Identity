@@ -1,0 +1,1 @@
+Scaffold-DbContext -Connection name=DefaultConnection -Provider Microsoft.EntityFrameworkCore.SqlServer -Project "IdentityDemo" -OutputDir "Models/Entities" -Context "MyContext" -NoOnConfiguring -Force
