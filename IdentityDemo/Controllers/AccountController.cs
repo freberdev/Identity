@@ -51,7 +51,7 @@ namespace IdentityDemo.Controllers
             }
 
             // Redirect user
-            return RedirectToAction(nameof(MembersAsync));
+            return RedirectToAction(nameof(Login));  
         }
 
         [HttpGet("login")]

@@ -111,15 +111,11 @@ namespace IdentityDemo.Models.Entities
             {
                 entity.ToTable("User");
 
-                entity.Property(e => e.FirstName).HasMaxLength(32);
-
-                entity.Property(e => e.LastName).HasMaxLength(32);
-
                 entity.HasOne(d => d.IdNavigation)
                     .WithOne(p => p.User)
                     .HasForeignKey<User>(d => d.Id)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK__User__Id__49C3F6B7");
+                    .HasConstraintName("FK__User__Id__37A5467C");
             });
 
             OnModelCreatingPartial(modelBuilder);

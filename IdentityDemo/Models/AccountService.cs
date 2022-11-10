@@ -50,9 +50,7 @@ namespace IdentityDemo.Models
             {
                 myContext.Users.Add(new User
                 {
-                    Id = identityUser.Id,
-                    FirstName = viewModel.FirstName,
-                    LastName = viewModel.LastName
+                    Id = identityUser.Id,                    
                 });
                 await myContext.SaveChangesAsync();
 
@@ -69,8 +67,6 @@ namespace IdentityDemo.Models
             new MembersVM
             {
                 Username = o.IdNavigation.UserName,
-                FirstName = o.FirstName,
-                LastName = o.LastName
             }).SingleAsync();
         }
 
